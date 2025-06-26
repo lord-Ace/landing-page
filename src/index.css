@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style-type: none;
   scroll-behavior: smooth;
+  color: currentcolor;
 }
 .container{
   display: flex;
@@ -20,7 +21,7 @@
 }
 #siteTitle{
   background-clip: text;
-  background-image: linear-gradient(to right, red 50%, blue 50%);
+  background-image: linear-gradient(to right, #5DADE2 50%, #58D68D 50%);
   color: transparent;
   width: max-content;
 
@@ -54,6 +55,6 @@
 }
 #heroes{
   background: linear-gradient(270deg, #58D68D 0%, #5DADE2 100%);
-  height: 700px;
+  height: 40rem;
   flex-direction: row-reverse;
 }
