@@ -1,0 +1,62 @@
+import React from 'react'
+import '../index.css'
+import Lang from './Lang.jsx'
+
+// header section
+const Header =({siteTitle})=>{
+  const pages = ['News', 'About us', 'Services']
+  const pagee = pages.map((page)=><a>{page}</a>)
+  return(
+  <header className='container' id='header'>
+    <section id='first'>
+    <h1 id='siteTitle'>{siteTitle}</h1>
+    </section>
+    <section className='container head second'>
+      {pagee}
+      <button id='contact-us'>Contact us</button>
+    </section>
+  </header>
+  )
+}
+
+// Heroes section
+const Heroes = ()=>{
+  return(
+    <section id='heroes' className='container'>
+    <img></img>
+    <div>
+      <h2>Your <span>Health</span>, Our <span>Priority</span></h2>
+      <p>Experience personalized, reliable, and compassionate care from trusted medical professionals dedicated to your well-being</p>
+      <button>Book an Appointment</button>
+    </div>
+    </section>
+    )
+}
+
+// milestone
+const Milestones = ()=>{
+  const values = ['10+', '90%', '2000+', '20+']
+  const words = ['years of Experience', 'Patient satisfaction rating', 'Patients served annually', 'Healthcare providers on staff']
+  const milestone = values.map((value)=><div>
+    <h3>{value}</h3>
+    <p>{words[values.indexOf(value)]}</p>
+  </div>)
+  return(
+    <section>
+      {milestone}
+    </section>
+    )
+}
+
+function Top () {
+ return (
+   <>
+    <Header siteTitle='CareNest'/>
+    <Heroes/>
+    <Milestones/>
+    <Lang/>
+  </>
+  )
+}
+
+export default Top
