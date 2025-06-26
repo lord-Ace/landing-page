@@ -17,7 +17,6 @@
   width: 87.7%;
   margin: auto;
   justify-content: space-between;
-  /* border: 3px solid red; */
 }
 #siteTitle{
   background-clip: text;
@@ -33,7 +32,7 @@
   justify-content: space-between;
   flex: 1 1 70%;
 }
-#contact-us{
+#contact-us, #book{
   background: hsla(204, 70%, 63%, 1);
   color: white;
   border-radius: 30px;
@@ -54,7 +53,21 @@
   border-radius: 40px;
 }
 #heroes{
-  background: linear-gradient(270deg, #58D68D 0%, #5DADE2 100%);
+  background: linear-gradient(270deg, hsl(145, 61%, 86%) 0%, hsl(203, 70%, 90%) 100%);
   height: 40rem;
   flex-direction: row-reverse;
+}
+#write{
+  flex: 1 1;
+}
+#woman{
+  aspect-ratio: 1/1;
+  width: 540px;
+  justify-self: baseline;
+}
+#health{
+  color: #5DADE2;
+}
+#priority{
+  color: #58D68D;
 }

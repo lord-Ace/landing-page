@@ -23,11 +23,11 @@ const Header =({siteTitle})=>{
 const Heroes = ()=>{
   return(
     <section id='heroes' className='container'>
-    <img></img>
-    <div>
-      <h2>Your <span>Health</span>, Our <span>Priority</span></h2>
+    <img id='woman' src='/src/assets/woman.png'></img>
+    <div id='write'>
+      <h2>Your <span id='health'>Health</span>, Our <span id='priority'>Priority</span></h2>
       <p>Experience personalized, reliable, and compassionate care from trusted medical professionals dedicated to your well-being</p>
-      <button>Book an Appointment</button>
+      <button id='book'>Book an Appointment</button>
     </div>
     </section>
     )
