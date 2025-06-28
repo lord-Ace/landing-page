@@ -1,0 +1,71 @@
+@import url('../index.css');
+
+#header.container{
+  width: 87.7%;
+  margin: auto;
+  justify-content: space-between;
+}
+#siteTitle{
+  background-clip: text;
+  background-image: linear-gradient(to right, var(--primary) 50%, #58D68D 50%);
+  color: transparent;
+  width: max-content;
+
+}
+#first{
+  flex: 1 1 min(27%, 100%);
+}
+.head{
+  justify-content: space-between;
+  flex: 1 1 70%;
+}
+#contact-us::before{
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  background: hsla(204, 70%, 63%, 0.2);
+  top: -4px;
+  bottom: -4px;
+  left: -10px;
+  right: -10px;
+  border-radius: 40px;
+}
+#heroes{
+  background: linear-gradient(270deg, hsl(145, 61%, 86%) 0%, hsl(203, 70%, 90%) 100%);
+  height: 30rem;
+  flex-direction: row-reverse;
+}
+#write{
+  flex: 1 0 min(150px, 100%);
+}
+#woman{
+  aspect-ratio: 1/0.8;
+  width: min(540px, 100%);
+  align-self: flex-end;
+}
+#health{
+  color: #5DADE2;
+}
+#priority{
+  color: #58D68D;
+}
+#book, #milestones{
+  box-shadow: 0 4px 4px hsla(204, 70%, 63%, 0.2);
+}
+#milestones{
+  border-radius: 40px;
+  padding: 24px;
+  background: white;
+  transform: translateY(-50%);
+  width: min(700px, 100%);
+  text-align: center;
+  margin: auto;
+  align-items: flex-start;
+}
+.milestone{
+  flex: 1 1 min(125px, 100%);
+}
+.value{
+  color: #58D68D;
+  font-size: 2.5rem;
+}

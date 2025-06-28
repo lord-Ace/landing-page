@@ -1,5 +1,5 @@
 import React from 'react'
-import '../index.css'
+import '../Styles/top.css'
 import Lang from './Lang.jsx'
 
 // header section
@@ -13,7 +13,7 @@ const Header =({siteTitle})=>{
     </section>
     <section className='container head second'>
       {pagee}
-      <button id='contact-us'>Contact us</button>
+      <button id='contact-us' className='button'>Contact us</button>
     </section>
   </header>
   )
@@ -27,7 +27,7 @@ const Heroes = ()=>{
     <div id='write'>
       <h2>Your <span id='health'>Health</span>, Our <span id='priority'>Priority</span></h2>
       <p>Experience personalized, reliable, and compassionate care from trusted medical professionals dedicated to your well-being</p>
-      <button id='book'>Book an Appointment</button>
+      <button id='book' className='button'>Book an Appointment</button>
     </div>
     </section>
     )
@@ -37,12 +37,12 @@ const Heroes = ()=>{
 const Milestones = ()=>{
   const values = ['10+', '90%', '2000+', '20+']
   const words = ['years of Experience', 'Patient satisfaction rating', 'Patients served annually', 'Healthcare providers on staff']
-  const milestone = values.map((value)=><div>
-    <h3>{value}</h3>
+  const milestone = values.map((value)=><div className='milestone' >
+    <h2 className='value' >{value}</h2>
     <p>{words[values.indexOf(value)]}</p>
   </div>)
   return(
-    <section>
+    <section id='milestones' className='container'>
       {milestone}
     </section>
     )
@@ -54,7 +54,6 @@ function Top () {
     <Header siteTitle='CareNest'/>
     <Heroes/>
     <Milestones/>
-    <Lang/>
   </>
   )
 }
