@@ -11,8 +11,10 @@
   position: relative;
 }
 :root{
-  --primar: hsla(204, 70%, 63%, 1);
+  --primary: hsla(204, 70%, 63%, 1);
   --secondary: hsla(145, 61%, 59%, 1);
+  --tetiary: hsla(204, 70%, 63%, 0.2);
+  --neutral: white;
 }
 .container{
   display: flex;
@@ -21,8 +23,8 @@
   flex-wrap: wrap;
 }
 .button{
-  background: var(--primar);
-  color: white;
+  background: var(--primary);
+  color: var(--neutral);
   border-radius: 30px;
   padding: 8px 20px;
 }

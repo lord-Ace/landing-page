@@ -4,7 +4,7 @@ import Lang from './Lang.jsx'
 
 // header section
 const Header =({siteTitle})=>{
-  const pages = ['News', 'About us', 'Services']
+  const pages = ['Home', 'About us', 'Services', 'News']
   const pagee = pages.map((page)=><a>{page}</a>)
   return(
   <header className='container' id='header'>
@@ -13,7 +13,11 @@ const Header =({siteTitle})=>{
     </section>
     <section className='container head second'>
       {pagee}
-      <button id='contact-us' className='button'>Contact us</button>
+      <button id='contact-us' className='button container2'>
+        Contact us
+        <img src="public/arrow-right-circle.png" alt="" />
+      </button>
+      <Lang/>
     </section>
   </header>
   )
@@ -23,11 +27,13 @@ const Header =({siteTitle})=>{
 const Heroes = ()=>{
   return(
     <section id='heroes' className='container'>
-    <img id='woman' src='/src/assets/woman.png'></img>
+    <img id='woman' src='public/woman.png'></img>
     <div id='write'>
       <h2>Your <span id='health'>Health</span>, Our <span id='priority'>Priority</span></h2>
       <p>Experience personalized, reliable, and compassionate care from trusted medical professionals dedicated to your well-being</p>
-      <button id='book' className='button'>Book an Appointment</button>
+      <button id='book' className='button container'>
+        Book an Appointment
+        </button>
     </div>
     </section>
     )
