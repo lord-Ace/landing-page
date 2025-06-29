@@ -13,7 +13,7 @@ const Header =({siteTitle})=>{
     </section>
     <section className='container head second'>
       {pagee}
-      <button id='contact-us' className='button container2'>
+      <button id='contact-us' className='button container'>
         Contact us
         <img src="public/arrow-right-circle.png" alt="" />
       </button>

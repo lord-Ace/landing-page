@@ -1,7 +1,7 @@
 @import url('../index.css');
 
 main{
-    padding: 0 5rem;
+    padding: 0 3rem;
 }
 main section{
     margin-bottom: 6rem;
@@ -23,15 +23,16 @@ main section{
 .featured{
   aspect-ratio: 1/0.75;
   width: min(540px, 100%);
-  border-radius: 30px;
+  border-radius: var(--border);
 }
 .first div{
     flex: 1 1 min(100px, 100%);
 }
 
 .card{
+    align-self: stretch;
     background: var(--tetiary);
-    border-radius: 30px;
+    border-radius: var(--border);
     padding: 1rem;
     flex: 1 1 min(25%, 400px);
     gap: .5rem;
@@ -39,7 +40,7 @@ main section{
 .crest{
     background: var(--secondary);
     padding: .8rem;
-    border-radius: 30px;
+    border-radius: var(--border);
     box-shadow: -7px -7px hsla(145, 61%, 59%, .2);
     margin-right : 1rem;
 }
@@ -55,9 +56,15 @@ main section{
 .chose{
     flex: 1 1 min(10%, 1000px);
     background: hsl(0, 0%, 98%);
-    border-radius: 30px;
+    border-radius: var(--border);
 }
 .third{
     gap: 4rem;
     align-items: stretch;
+}
+.teams{
+    gap: 1rem;
+}
+.team{
+    border-radius: var(--border);
 }

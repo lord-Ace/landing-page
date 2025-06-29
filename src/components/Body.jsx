@@ -47,12 +47,23 @@ function Body (){
     </section>
     
   {/* // Third section */}
-      <SectionIntro introCaption='why choose us' introTitle='Redefining Care, One Patient at a Time'/>
+    <SectionIntro introCaption='why choose us' introTitle='Redefining Care, One Patient at a Time'/>
     <section className='container third'>
       <div className='chose container'>
        {chosen}
       </div>
-      <img src='public/care.png' className='featured'></img>
+      <img src='public/care.png' className='featured'/>
+    </section>
+
+    {/* fourth section */}
+    <section className="fourth">
+    <SectionIntro introCaption='why choose us' introTitle='Our Expert Team'/>
+    <div className="teams container">
+      <img src="public/img1.png" alt="" className="team" />
+      <img src="public/img2.png" alt="" className="team" />
+      <img src="public/img3.png" alt="" className="team" />
+      <img src="public/img4.png" alt="" className="team" />
+    </div>
     </section>
     </main>
     )
