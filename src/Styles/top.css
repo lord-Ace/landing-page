@@ -3,21 +3,21 @@
 #header.container{
   width: 87.7%;
   margin: auto;
-  padding: 1rem 0;
+  justify-content: space-between;
 }
 #siteTitle{
   background-clip: text;
-  background-image: linear-gradient(to right, var(--primary) 50%, var(--secondary) 50%);
+  background-image: linear-gradient(to right, var(--primary) 50%, #58D68D 50%);
   color: transparent;
   width: max-content;
 
 }
 #first{
-  flex: 1 1 30%;
+  flex: 1 1 min(27%, 100%);
 }
 .head.second.container{
   justify-content: space-between;
-  flex: 1 1 min(570px, 100%);
+  flex: 1 1 70%;
 }
 #contact-us::before{
   content: ' ';
@@ -50,13 +50,13 @@
   color: #58D68D;
 }
 #book, #milestones{
-  box-shadow: 0 4px 4px var(--tetiary);
+  box-shadow: 0 4px 4px hsla(204, 70%, 63%, 0.2);
 }
 #milestones{
   border-radius: 40px;
   padding: 24px;
-  background: var(--neutral);
-  transform: translateY(-50%);
+  background: white;
+  /* transform: translateY(-50%); */
   width: min(700px, 100%);
   text-align: center;
   margin: auto;
