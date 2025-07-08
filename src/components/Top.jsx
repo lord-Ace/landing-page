@@ -9,7 +9,7 @@ const Header =({siteTitle})=>{
   return(
   <header className='container' id='header'>
     <section id='first'>
-    <h1 id='siteTitle'>{siteTitle}</h1>
+    <h1 className='siteTitle'>{siteTitle}</h1>
     </section>
     <section className='container head second'>
       {pagee}

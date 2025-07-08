@@ -1,7 +1,7 @@
 @import url('../index.css');
 
 main{
-    padding: 0 3rem;
+    padding: 0 1rem;
 }
 main section{
     margin-bottom: 6rem;
@@ -67,4 +67,13 @@ main section{
 }
 .team{
     border-radius: var(--border);
+}
+.centetred{
+  text-align: center;
+}
+.testemonial{
+  background: var(--tetiary);
+  border-radius: var(--border);
+  flex: 1 1 max(50%, 400px);
+  padding: 1rem;
 }

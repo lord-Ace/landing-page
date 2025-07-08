@@ -19,6 +19,16 @@ const chosen = chooseUs.map((choose)=><div className='container us'>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, doloremque. Praesentium officia minus recusandae inventore </p>
 </div>
 </div>)
+const Testemonial = ()=>{
+  return(
+    <div>
+      <img src=''/>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget justo
+      </p>
+    </div>
+    )
+}
 
 function Body (){
   return(
@@ -35,7 +45,9 @@ function Body (){
     
     {/* // second Section */}
     <section className='container'>
-      <SectionIntro introTitle='Comprehensive Medical Services' introCaption='services'/>
+      <div className='centetred'>
+            <SectionIntro introTitle='Comprehensive Medical Services' introCaption='services'/>
+    </div>
       <div className="container second">
       <Card heading='General Check-Ups' image='public/card1.png'/>
       <Card heading='Specialized Services' image='public/card2.png'/>
@@ -47,8 +59,10 @@ function Body (){
     </section>
     
   {/* // Third section */}
-    <SectionIntro introCaption='why choose us' introTitle='Redefining Care, One Patient at a Time'/>
     <section className='container third'>
+      <div className='centetred'>
+       <SectionIntro introCaption='why choose us' introTitle='Redefining Care, One Patient at a Time'/>
+      </div>
       <div className='chose container'>
        {chosen}
       </div>
@@ -57,13 +71,45 @@ function Body (){
 
     {/* fourth section */}
     <section className="fourth">
-    <SectionIntro introCaption='why choose us' introTitle='Our Expert Team'/>
+    <div className='centetred'>
+          <SectionIntro introCaption='why choose us' introTitle='Our Expert Team'/>
+    </div>
     <div className="teams container">
       <img src="public/img1.png" alt="" className="team" />
       <img src="public/img2.png" alt="" className="team" />
       <img src="public/img3.png" alt="" className="team" />
       <img src="public/img4.png" alt="" className="team" />
     </div>
+    </section>
+    
+    {/* fifth section */}
+    <section>
+      <div className='centetred'>
+         <SectionIntro introCaption='Testimonials' introTitle='Customer Feedback'/>
+      </div>
+      <div className='container'>
+        <div className='testemonial'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum accusantium veniam debitis consequatur eos in </div>
+        <div className='testemonial'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum accusantium veniam debitis consequatur eos in </div>
+      </div>
+    </section>
+    <section className='container'>
+      <img/>
+      <form>
+        <input type='text' placeholder='Your Name'/>
+        <input type='email' placeholder='Your Email'/>
+        <input type='email' placeholder='Your Email'/>
+        <input type='email' placeholder='Your Email'/>
+        <textarea placeholder='Messages'></textarea>
+        <button className='button'>
+          Send Message
+        </button>
+      </form>
+    </section>
+    <section>
+     <SectionIntro introCaption='Testimonials' introTitle='Customer Feedback'/>
+     <div className='container'>
+       <Testemonial/>
+     </div>
     </section>
     </main>
     )

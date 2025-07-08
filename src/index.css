@@ -9,6 +9,7 @@
   border: 0;
   outline: 0;
   position: relative;
+  text-align: inherit;
 }
 :root{
   --primary: hsla(204, 70%, 63%, 1);
@@ -29,10 +30,14 @@
   border-radius: var(--border);
   padding: 8px 20px;
 }
-
-/* it{
+.siteTitle{
+  background-clip: text;
+  background-image: linear-gradient(to right, var(--primary) 50%, var(--secondary) 50%);
+  color: transparent;
+  width: max-content;
+}
+it{
 background: hsla(0, 0%, 100%, 1);
-background: 
 background: hsla(0, 0%, 27%, 1);
 background: hsla(0, 0%, 7%, 1);
 background: hsla(0, 0%, 7%, 1);
@@ -57,4 +62,3 @@ background: hsla(0, 0%, 82%, 1);
 background: hsla(0, 0%, 100%, 0.3);
 background: hsla(0, 0%, 100%, 0.2);
 }
- */

@@ -5,19 +5,15 @@
   margin: auto;
   justify-content: space-between;
 }
-#siteTitle{
-  background-clip: text;
-  background-image: linear-gradient(to right, var(--primary) 50%, #58D68D 50%);
-  color: transparent;
-  width: max-content;
 
-}
 #first{
   flex: 1 1 min(27%, 100%);
 }
 .head.second.container{
   justify-content: space-between;
   flex: 1 1 70%;
+  gap: .5rem;
+  padding: .5rem 0;
 }
 #contact-us::before{
   content: ' ';
@@ -44,10 +40,10 @@
   align-self: flex-end;
 }
 #health{
-  color: #5DADE2;
+  color: var(--primary);
 }
 #priority{
-  color: #58D68D;
+  color: var(--secondary);
 }
 #book, #milestones{
   box-shadow: 0 4px 4px hsla(204, 70%, 63%, 0.2);
@@ -55,7 +51,7 @@
 #milestones{
   border-radius: 40px;
   padding: 24px;
-  background: white;
+  background: var(--neutral);
   /* transform: translateY(-50%); */
   width: min(700px, 100%);
   text-align: center;
@@ -66,6 +62,6 @@
   flex: 1 1 min(125px, 100%);
 }
 .value{
-  color: #58D68D;
+  color: var(--secondary);
   font-size: 2.5rem;
 }
