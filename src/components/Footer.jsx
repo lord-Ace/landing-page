@@ -35,8 +35,10 @@ function Footer(){
       <p>
         copyright &copy; 2024 Ebo Designs
       </p>
+      <div className="end container">
       <p>Privacy Policy</p>
       <p>Terms and Service</p>
+      </div>
     </footer>
     )
 }

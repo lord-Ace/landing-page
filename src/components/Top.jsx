@@ -27,7 +27,7 @@ const Header =({siteTitle})=>{
 const Heroes = ()=>{
   return(
     <section id='heroes' className='container'>
-    <img id='woman' src='public/woman.png'></img>
+    <img id='woman' src='/woman.png'></img>
     <div id='write'>
       <h2>Your <span id='health'>Health</span>, Our <span id='priority'>Priority</span></h2>
       <p>Experience personalized, reliable, and compassionate care from trusted medical professionals dedicated to your well-being</p>

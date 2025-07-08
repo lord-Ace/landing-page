@@ -23,3 +23,8 @@
   width: 100%;
   margin-top: 1rem;
 }
+.end{
+  justify-self: left;
+  gap: .5rem;
+  flex-wrap: nowrap;
+}
