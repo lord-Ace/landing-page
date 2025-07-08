@@ -40,7 +40,7 @@ function Body (){
         <p>we are a team of dedicated medical practitioners commited to delivering personalised care and improving lives with compassion and expertise.</p>
         <button className='button'>Learn more</button>
       </div>
-      <img className='featured' src='public/care.png'></img>
+      <img className='featured' src='/care.png'></img>
     </section>
     
     {/* // second Section */}
@@ -49,9 +49,9 @@ function Body (){
             <SectionIntro introTitle='Comprehensive Medical Services' introCaption='services'/>
     </div>
       <div className="container second">
-      <Card heading='General Check-Ups' image='public/card1.png'/>
-      <Card heading='Specialized Services' image='public/card2.png'/>
-      <Card heading='Laboratory Services' image='public/card3.png'/>
+      <Card heading='General Check-Ups' image='/card1.png'/>
+      <Card heading='Specialized Services' image='/card2.png'/>
+      <Card heading='Laboratory Services' image='/card3.png'/>
       {/* <Card heading='General Check-Ups'/> */}
       </div>
       
@@ -75,10 +75,10 @@ function Body (){
           <SectionIntro introCaption='why choose us' introTitle='Our Expert Team'/>
     </div>
     <div className="teams container">
-      <img src="public/img1.png" alt="" className="team" />
-      <img src="public/img2.png" alt="" className="team" />
-      <img src="public/img3.png" alt="" className="team" />
-      <img src="public/img4.png" alt="" className="team" />
+      <img src="/img1.png" alt="" className="team" />
+      <img src="/img2.png" alt="" className="team" />
+      <img src="/img3.png" alt="" className="team" />
+      <img src="/img4.png" alt="" className="team" />
     </div>
     </section>
     
@@ -92,8 +92,8 @@ function Body (){
         <div className='testemonial'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum accusantium veniam debitis consequatur eos in </div>
       </div>
     </section>
-    <section className='container'>
-      <img/>
+    <section className='container form'>
+      <img src='/first.png'/>
       <form>
         <input type='text' placeholder='Your Name'/>
         <input type='email' placeholder='Your Email'/>

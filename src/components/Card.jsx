@@ -4,7 +4,7 @@ const Card = ({heading, image})=>{
   return(
   <div className='card container'>
     <h3 className='container'>
-      <img src='public/crest.png' className='crest'></img>
+      <img src='/crest.png' className='crest'></img>
       {heading}
     </h3>
     <img src={image} className='image'></img>

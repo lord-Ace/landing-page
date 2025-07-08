@@ -15,7 +15,7 @@ const Header =({siteTitle})=>{
       {pagee}
       <button id='contact-us' className='button container'>
         Contact us
-        <img src="public/arrow-right-circle.png" alt="" />
+        <img src="/arrow-right-circle.png" alt="" />
       </button>
       <Lang/>
     </section>

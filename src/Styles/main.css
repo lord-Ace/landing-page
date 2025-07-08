@@ -77,3 +77,10 @@ main section{
   flex: 1 1 max(50%, 400px);
   padding: 1rem;
 }
+.form{
+    background: var(--primary);
+}
+input, ::placeholder, textarea{
+    color: var(--neutral);
+    background: var(--neutral);
+}
