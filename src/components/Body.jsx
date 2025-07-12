@@ -21,8 +21,8 @@ const chosen = chooseUs.map((choose)=><div className='container us'>
 </div>)
 const Testemonial = ()=>{
   return(
-    <div>
-      <img src=''/>
+    <div className='two'>
+      <img src='/two.png'/>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget justo
       </p>
@@ -44,7 +44,7 @@ function Body (){
     </section>
     
     {/* // second Section */}
-    <section className='container'>
+    <section className='container sec'>
       <div className='centetred'>
             <SectionIntro introTitle='Comprehensive Medical Services' introCaption='services'/>
     </div>
@@ -88,26 +88,36 @@ function Body (){
          <SectionIntro introCaption='Testimonials' introTitle='Customer Feedback'/>
       </div>
       <div className='container'>
-        <div className='testemonial'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum accusantium veniam debitis consequatur eos in </div>
-        <div className='testemonial'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum accusantium veniam debitis consequatur eos in </div>
+        <div className='testemonial'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget justo incidunt faucibus. Nullam auctor, nisl vel pharetra consequat, nunc orci 
+           </div>
+        <div className='testemonial'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget justo incidunt faucibus. Nullam auctor, nisl vel pharetra consequat, nunc orci 
+        </div>
       </div>
     </section>
     <section className='container form'>
-      <img src='/first.png'/>
-      <form>
-        <input type='text' placeholder='Your Name'/>
-        <input type='email' placeholder='Your Email'/>
-        <input type='email' placeholder='Your Email'/>
-        <input type='email' placeholder='Your Email'/>
+      <img src="/first.png"/>
+      <form className='container'>
+        <input className='input' type='text' placeholder='Your Name'/>
+        <input className='input' type='email' placeholder='Your Email'/>
+        <input className='input' type='number' placeholder='Phone Number'/>
+        <input className='input' type='email' placeholder='Your Email'/>
         <textarea placeholder='Messages'></textarea>
         <button className='button'>
           Send Message
         </button>
       </form>
     </section>
-    <section>
+    <section className='container seventh'>
+     <div className='head'>
      <SectionIntro introCaption='Testimonials' introTitle='Customer Feedback'/>
-     <div className='container'>
+     </div>
+     <button className='button'>View All</button>
+   <div className='container lead'>
+       <Testemonial/>
+       <Testemonial/>
+       <Testemonial/>
        <Testemonial/>
      </div>
     </section>

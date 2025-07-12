@@ -28,7 +28,9 @@ main section{
 .first div{
     flex: 1 1 min(100px, 100%);
 }
-
+.second, .sec{
+  gap: 1rem;
+}
 .card{
     align-self: stretch;
     background: var(--tetiary);
@@ -62,7 +64,7 @@ main section{
     gap: 4rem;
     align-items: stretch;
 }
-.teams{
+.teams, .lead{
     gap: 1rem;
 }
 .team{
@@ -70,6 +72,7 @@ main section{
 }
 .centetred{
   text-align: center;
+  width: 100%;
 }
 .testemonial{
   background: var(--tetiary);
@@ -78,9 +81,53 @@ main section{
   padding: 1rem;
 }
 .form{
-    background: var(--primary);
+  background: hsla(204, 77%, 71%, 1);
+  border-radius: var(--border);
+  padding: 0 2rem;
+  padding-top: 1rem;
+}
+.form img{
+  width: min(300px, 100%);
+  height: auto;
+  align-self: flex-end;
+  margin-top: -15%;
+  transform: scaleX(-1);
+}
+form{
+  gap: .5rem;
+  flex: 1 1 min(50%, 400px);
+  margin-bottom: 1rem;
+}
+form button.button{
+  background: var(--neutral);
+  color: var(--primary);
+  margin-right: auto;
+}
+input.input{
+  height: 2.5rem;
+  flex: 1 1 min(200px, 100%);
+  background: hsla(204, 83%, 59%, 1);
 }
 input, ::placeholder, textarea{
     color: var(--neutral);
-    background: var(--neutral);
+    background: hsla(204, 83%, 59%, 1);
+    width: 100%;
+    height: 5rem;
+    padding: .3rem;
+}
+.two{
+  flex: 1 1 min(200px, 100%);
+}
+.two img{
+  width: 100%;
+  height: auto;
+  border-radius: var(--border);
+}
+section.container.seventh{
+  justify-content: space-between;
+}
+@media screen and (max-width: 769px){
+  .form img{
+    display: none;
+  }
 }
